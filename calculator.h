@@ -2,7 +2,7 @@
 #define CALCULATOR_H
 
 #include <QMainWindow>
-#include <fehlerdialog.h>
+#include <QMessageBox>
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class Calculator; }
@@ -27,6 +27,26 @@ public:
 private slots:
     void berechnen();
     void reset();
+    void deleteCharakter();
+
+    void null();
+    void eins();
+    void zwei();
+    void drei();
+    void vier();
+    void fuenf();
+    void sechs();
+    void sieben();
+    void acht();
+    void neun();
+    void klammarAuf();
+    void klammarZu();
+    void komma();
+
+    void multiplikation();
+    void subtraktion();
+    void addtion();
+    void division();
 
 private:
     Ui :: Calculator*ui;
